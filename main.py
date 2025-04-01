@@ -1,14 +1,12 @@
 from datetime import date, timedelta
-from data import Datas
+from escalas import Escala
 
-PESSOAS = ["Lucas", "Pedro", "Kaue", "Myara", "Esther"]
-TAREFAS = ["Banheiro", "SG", "Lavanderia", "TG", "Cozinha"]
+PESSOAS = ["Lucas", "Pedro", "Kaue", "Mayara", "Esther"]
+TAREFAS = ["TG", "Cozinha", "Banheiro", "SG", "Lavanderia"]
 
 
 def main():
-    d = Datas()
-    print(d.data_inicial)
-    print(d.data_final)
+    d = Escala(PESSOAS, TAREFAS)
 
 
 main()
